@@ -1,0 +1,343 @@
+
+/*Min font*/
+@font-face {
+    font-family: 'counter-strikeregular';
+    src: url('fonts/cs_regular-webfont.woff2') format('woff2'),
+        url('fonts/cs_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    background-color: #FFDEE9;
+    background-image: linear-gradient(299deg, #FFDEE9 0%, #B5FFFC 100%);
+    height: 100%;
+
+}
+
+body {
+
+    margin-top: 0.3rem;
+
+    margin-left: 5%;
+    margin-right: 5%;
+    border: 0.5rem solid white;
+    border-radius: 0.8rem;
+    margin-bottom: 30%
+}
+
+nav,
+topnav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 0.3rem;
+    transition: box-shadow .3s;
+
+}
+
+nav a {
+    font-size: 2rem;
+    flex: 1;
+    text-align: center;
+    margin: 0.2rem;
+    padding: 0.2rem;
+    font-family: counter-strikeregular, sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    box-shadow: 0 0 11px rgba(33, 33, 33, .2)
+}
+
+@media only screen and (min-width: 768px) {
+    nav {
+        flex-direction: row;
+    }
+}
+
+.topnav {
+    background: grey;
+
+}
+
+/* Logga */
+.logotext {
+
+    background-image: linear-gradient(to right, #757F9A 0%, #D7DDE8 51%, #757F9A 100%);
+    background-size: 180% auto;
+    transition: 0.5s;
+    font-family: counter-strikeregular, sans-serif;
+    border: 0.3rem solid white;
+    border-radius: 0.7rem;
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+
+.logotext:hover {
+    background-position: right center;
+    color: white;
+}
+
+.logotext a {
+    text-decoration: none;
+    color: black;
+
+}
+
+header {
+    background-color: grey;
+    padding: 1.2rem;
+    ;
+    text-align: center;
+    padding-left: 35%;
+
+    padding-right: 35%;
+
+
+}
+
+
+
+
+/* "more" knappen*/
+.dropdown {
+
+    font-family: counter-strikeregular, sans-serif;
+    overflow: hidden;
+    flex: 3;
+    text-align: center;
+    text-align: center;
+    margin: 0.2rem;
+    padding: 0.2rem;
+    text-decoration: none;
+
+
+}
+
+.dropdown .dropbtn {
+
+    background-image: linear-gradient(to right, #283048 0%, #859398 51%, #283048 100%);
+    background-size: 140% auto;
+    transition: 0.5s;
+    border: none;
+    border-radius: 10rem;
+    padding: 1.7rem;
+    margin: 0;
+
+}
+
+.dropbtn:hover {
+    background-position: right center;
+    color: black;
+
+}
+
+/*.navbar a:hover,
+.dropbtn:hover .dropbtn {} */
+
+
+.dropdown-content {
+
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin-left: 21%;
+
+}
+
+
+.dropdown-content a {
+    font-family: sans-serif;
+    float: none;
+    color: black;
+    padding: 0.4rem 0.2rem;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*Kolumner*/
+.column {
+    text-align: center;
+    float: left;
+    padding: 1rem;
+
+}
+
+.left,
+.right {
+    width: 25%;
+
+}
+
+.middle {
+    width: 50%;
+
+}
+
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/*Responsiv layout för kolumner*/
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+
+
+/*TEXT*/
+p {
+    text-align: left;
+    font-size: 1.6rem;
+    font-family: sans-serif;
+}
+
+
+
+
+
+
+
+/*responsiv iframe*/
+.resp-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+
+.resp-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    border: 0.3rem solid gray;
+    border-radius: 0.8rem;
+}
+
+
+/*footer*/
+footer {
+
+    background-color: grey;
+    padding: 1em 1em;
+    text-align: center;
+    text-decoration: none;
+    bottom: 0;
+
+
+
+}
+
+footer a {
+    text-decoration: none;
+    text-decoration-color: White;
+    color: white;
+}
+
+.notcopy {
+
+    margin-top: 1.5rem;
+    margin-right: 1rem;
+    float: right;
+    color: black;
+}
+
+/*kontaktruta*/
+form {
+    /* Center the form on the page */
+    margin: 0 auto;
+    width: 50rem;
+    /* Form outline */
+    padding: 1rem;
+    border: 0.5rem solid grey;
+    border-radius: 1em;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+form li + li {
+    margin-top: 2rem;
+}
+
+label {
+    /* Uniform size & alignment */
+    display: inline-block;
+    width: 5rem;
+    text-align: right;
+}
+
+input,
+textarea {
+    /* To make sure that all text fields have the same font settings
+     By default, textareas have a monospace font */
+    font: 1em sans-serif;
+
+    /* Uniform text field size */
+    width: 300px;
+    box-sizing: border-box;
+
+    /* Match form field borders */
+    border: 1px solid #999;
+}
+
+input:focus,
+textarea:focus {
+    /* Additional highlight for focused elements */
+    border-color: #000;
+}
+
+textarea {
+    /* Align multiline text fields with their labels */
+    vertical-align: top;
+
+    /* Provide space to type some text */
+    height: 5em;
+}
+
+.button {
+    /* Align buttons with the text fields */
+    padding-left: 90px;
+    /* same size as the label elements */
+}
+
+button {
+    /* This extra margin represent roughly the same space as the space
+     between the labels and their text fields */
+    margin-left: .5em;
+}
